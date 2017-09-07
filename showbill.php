@@ -134,17 +134,12 @@
             echo " <div class='menu-bar'>";  
             echo "<div class='logout'><a href='logout.php'>Logout</a></div>";
             echo "<div class='show-cart'><a href='viewcart.php'>Cart</a></div>";
-            echo "<div class='profile'><a href='profile.php'>Profile</a></div>";  
+            echo "<div class='profile'><a href='profile.php'>Profile</a></div>";
+	    echo "<div class='buy'><a href='userhome.php'><span>Ticket</span></a></div>";
             if(isset($_SESSION['id']) && $_SESSION['utype']=="admin")
             {
-
-                
-                
-                echo "<div class='buy'><a href='userhome.php'><span>Ticket</span></a></div>";
                 echo "<div class='admin'><a href='addtrainview.php'>Admin</a></div>";
                 echo "<div class='user'><a href='userdetails.php'>Users</a></div>";
-
-
             }  
             
         echo "</div>";
